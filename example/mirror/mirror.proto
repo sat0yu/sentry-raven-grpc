@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package mirror;
+
+// The mirror service definition.
+service Mirror {
+  rpc Echo (EchoRequest) returns (EchoResponse) {}
+}
+
+// The request containing the original message.
+message EchoRequest {
+  string request_body = 1;
+}
+
+// The response containing the mirrored message.
+message EchoResponse {
+  string response_body = 1;
+}
