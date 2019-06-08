@@ -1,4 +1,4 @@
-module .
+module github.com/sat0yu/sentry-raven-grpc
 
 go 1.12
 
