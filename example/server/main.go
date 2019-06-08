@@ -39,7 +39,8 @@ func main() {
 		log.Fatalf("failed to listen: %v", err)
 	}
 
-	dsn := "https://be6950a062634bc2a2ec35d53a493f8f:f9a9ae305d3941e393e19702e3f1ca9e@sentry.io/1477707"
+	// TODO: replace your Sentry DSN
+	dsn := "https://XXXXXXXXXXX:YYYYYYYYYY.io/123456789"
 	ravenClient := raven.NewClient(dsn)
 	option := raven.SentryRavenInterceptorOption(ravenClient)
 	s := grpc.NewServer(option)
